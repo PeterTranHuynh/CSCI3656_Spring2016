@@ -1,0 +1,23 @@
+>> h = 0.1; CSCI3656_ProblemSet11_2( h )
+
+endPoint =
+
+    19
+
+
+ans =
+
+    3.8986
+
+>> h = 0.2; CSCI3656_ProblemSet11_2( h )
+
+endPoint =
+
+    19
+
+
+ans =
+
+    3.9103
+
+>> 

@@ -1,0 +1,51 @@
+>> matrixA = [-2 1 -4; 7 -3 1; 3 -1 -7], vectorb = [-5 -2 1]; CSCI3656_ProblemSet4_1(matrixA, vectorb)
+
+matrixA =
+
+    -2     1    -4
+     7    -3     1
+     3    -1    -7
+
+
+ans =
+
+    2.5000    1.0000   -0.5000
+
+>> matrixA = [-2 1 -4; 7 -3 1; 3 -1 -7], vectorb = [-5; -2; 1]; CSCI3656_ProblemSet4_1(matrixA, vectorb)
+
+matrixA =
+
+    -2     1    -4
+     7    -3     1
+     3    -1    -7
+
+Step 1
+  Matrix A:
+   -2.0000    1.0000   -4.0000
+         0    0.5000  -13.0000
+         0    0.5000  -13.0000
+
+  Vector b:
+   -5.0000
+  -19.5000
+   -6.5000
+
+Step 2
+  Matrix A:
+   -2.0000    1.0000   -4.0000
+         0    0.5000  -13.0000
+         0         0         0
+
+  Vector b:
+   -5.0000
+  -19.5000
+   13.0000
+
+
+ans =
+
+   NaN
+   Inf
+   Inf
+
+>> 

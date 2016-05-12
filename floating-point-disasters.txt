@@ -1,0 +1,63 @@
+From Pete Stewart at the University of Maryland, via Liz Jessup:
+
+1. The Patriot and the Scud.
+   Sources
+   1. General Accounting Office Report GAO/IMTEC-92-26.
+   2. Robert Skeel, "Roundoff Error Cripples Patriot
+      Missile,"  SIAM News, July 1992.
+
+   On February 25, 1991, during the Gulf War, a Patriot missile
+   defense system let a Scud get through.  It hit a barracks, killing
+   28 people.  The problem was in the differencing of floating point
+   numbers obtained by converting and scaling an integer timing
+   register.  The GAO report has less than the full story.  For that
+   see Skeel's excellent article.
+
+2. The short flight of the Ariane 5.
+   Source
+   1. Report by the Inquiry Board.
+       http://www.esrin.esa.it/htdocs/tidc/Press/Press96/ariane5rep.html
+      
+   On June 4, 1996, the first Ariane 5 was launched.  All went well
+   for 36 seconds.  Then the Ariane veered off course and
+   self-destructed.  The problem was in the Inertial Reference System,
+   which produced an operation exception trying to convert a 64-bit
+   floating-point number to a 12-bit integer.  It sent a diagnostic
+   word to the On-Board Computer, which interpreted it as flight data.
+   Finis.
+
+   Ironically, the computation was done by legacy software from the
+   Ariane 4, and its results were not needed after lift-off.
+
+3. The Vancouver Stock Exchange
+   Sources
+   1. The Wall Street Journal November 8, 1983, p.37.
+   2. The Toronto Star, November 19, 1983.
+   3. B.D. McCullough and H.D. Vinod
+      Journal of Economic Literature
+      Vol XXXVII (June 1999), pp. 633-665.
+   (References communicated by Valerie Fraysse)
+
+   In 1982 (I figure) the Vancouver Stock Exchange instituted a new
+   index initialized to a value of 1000.000.  The index was updated
+   after each transaction.  Twenty two months later it had fallen to
+   520.  The cause was that the updated value was truncated rather
+   than rounded.  The rounded calculation gave a value of 1098.892.
+
+4. Parliamentary elections in Schleswig-Holstein.
+   Sources
+   1. Rounding error changes Parliament makeup
+      Debora Weber-Wulff
+      The Risks Digest
+      Volume 13, Issue 37, 1992
+      http://catless.ncl.ac.uk/Risks/
+
+   In German parliamentary elections, a party with less than 5.0% of
+   the vote cannot be seated.  The Greens appeared to have a
+   cliff-hanging 5.0%, until it was discovered (after the results had
+   been announced) that they really had only 4.97%.  The printout was
+   to two figures, and the actual percentage was rounded to 5.0%.
+
+5. For a few more examples try searching the RISK Digest
+   ( http://catless.ncl.ac.uk/Risks/) with the key word "rounding"
+   (David Goldberg's idea).
